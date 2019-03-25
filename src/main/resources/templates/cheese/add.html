@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+
+<body>
+<h1 th:text = "${title}">Add a Cheese!</h1>
+<nav th:replace="fragments :: navigation"></nav>
+<form method="post">
+    <p><h2>Name the cheese:</h2><input type="text" name="cheeseName" /></p>
+    <p><h2>Describe the cheese:</h2><input type="text" name="cheeseDesc" /></p>
+<input type="submit" value="Add the Cheese" />
+</form>
+
+</body>
+</html>

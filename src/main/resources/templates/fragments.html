@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/" xmlns:margin-top="http://www.w3.org/1999/xhtml"
+      xmlns:display="http://www.w3.org/1999/xhtml">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <title th:test="${title}">My Cheeses</title>
+
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <script type="text/javascript" th:src="@{/js/script.js}"></script>
+
+</head>
+<body>
+
+<nav th:fragment="navigation">
+    <button class="btn"><a href="/cheese"><i class="fas fa-clipboard-list"></i><span style="display:block; margin-top:-20px;">List</span></a></button>
+    <button class="btn"><a href="/cheese/add"><i class="fas fa-cheese"></i><span style="display:block; margin-top:-20px;">Add</span></a></button>
+</nav>
+
+</body>
+</html>
