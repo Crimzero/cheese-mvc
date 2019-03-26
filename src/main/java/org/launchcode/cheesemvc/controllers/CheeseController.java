@@ -34,10 +34,11 @@ public class CheeseController {
     @RequestMapping(value = "add", method = RequestMethod.POST)
     public String processAddCheeseForm(@RequestParam String cheeseName, @RequestParam String cheeseDesc) {
         Cheese cheese = new Cheese();
-        HashMap<String, String> aCheese = new HashMap<>();
-        cheese.setName();
 
-        cheeses.put(cheeseName, cheeseDesc);
+        cheese.setName(cheeseName);
+        cheese.setDesc(cheeseDesc);
+
+        cheeses.put(cheese.getName(), cheese.getDesc());
 
         return "redirect:";
     }
